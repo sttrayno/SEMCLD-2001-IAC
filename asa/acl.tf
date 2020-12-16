@@ -1,5 +1,5 @@
-resource "ciscoasa_acl" "foo" {
-  name = "aclname"
+resource "ciscoasa_acl" "app-acl" {
+  name = "app-acl"
   rule {
     source              = "192.168.10.5/32"
     destination         = "192.168.15.0/25"
